@@ -1,0 +1,4 @@
+#Sat Jun 20 13:12:02 BDT 2020
+base.0=C\:\\Users\\SHIMUL\\AndroidStudioProjects\\gymWork\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

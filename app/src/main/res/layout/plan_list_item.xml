@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="270dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent2"
+    app:cardCornerRadius="30dp"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_empty_checkbox"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/emptyCheckBox"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_filled_checkbox"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/filledCheckBox"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/activityName"
+            android:textStyle="bold"
+            android:text="name"
+            android:textSize="18sp"
+            android:layout_margin="10dp"/>
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:id="@+id/activityImage"
+            android:src="@mipmap/ic_launcher"
+            android:layout_below="@id/activityName"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/timeRelLayout"
+            android:layout_below="@id/activityImage">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="time:  "
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:id="@+id/textTimeExplain"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="zero"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:id="@+id/textTimeAmount"
+                android:layout_toRightOf="@id/textTimeExplain"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="minutes"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:id="@+id/textMinutes"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@id/textTimeAmount"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timeRelLayout"
+            android:textStyle="italic"
+            android:text="short description"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/textShortDescription"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
